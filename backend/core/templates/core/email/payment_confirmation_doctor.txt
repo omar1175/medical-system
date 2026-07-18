@@ -1,0 +1,11 @@
+Hello Dr. {{ doctor.user.get_full_name|default:doctor.user.username }},
+
+A payment has been received for an appointment.
+
+Patient: {{ patient.get_full_name|default:patient.username }}
+Amount: {{ payment.amount }} {{ payment.currency }}
+Appointment: #{{ payment.appointment_id }}
+
+{% if payment.receipt_url %}Receipt: {{ payment.receipt_url }}{% endif %}
+
+MediSys

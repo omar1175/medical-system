@@ -1,0 +1,14 @@
+Hello {{ patient.get_full_name|default:patient.username }},
+
+Dr. {{ doctor.user.get_full_name|default:doctor.user.username }} has requested a payment for your appointment.
+
+Amount due: {{ payment.amount }} {{ payment.currency }}
+Appointment: #{{ payment.appointment_id }}
+
+Please complete your payment here:
+{{ checkout_url }}
+
+If the link does not work, copy and paste the URL into your browser.
+
+Thank you,
+MediSys
