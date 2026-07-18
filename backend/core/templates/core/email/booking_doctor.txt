@@ -1,0 +1,9 @@
+Hi Dr. {{ appointment.doctor.user.get_full_name|default:appointment.doctor.user.username }},
+
+You have a new appointment request from
+{{ appointment.patient.get_full_name|default:appointment.patient.username }}
+for {{ appointment.scheduled_at }}.
+
+Please review and confirm or reject it in your dashboard.
+
+Medical Appointment System

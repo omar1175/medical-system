@@ -1,0 +1,8 @@
+Hi {{ appointment.patient.get_full_name|default:appointment.patient.username }},
+
+Your appointment with Dr. {{ appointment.doctor.user.get_full_name|default:appointment.doctor.user.username }}
+({{ appointment.specialty.name }}) is requested for {{ appointment.scheduled_at }}.
+We will notify you once the doctor confirms.
+
+Thank you,
+Medical Appointment System

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body style="font-family: Arial, sans-serif; color: #1f2933;">
+    <h2>Confirm your account</h2>
+    <p>Hi {{ user.get_full_name|default:user.username }},</p>
+    <p>Thanks for registering with the Medical Appointment System.</p>
+    <p>
+      <a href="{{ link }}"
+         style="background:#0e7c66;color:#fff;padding:10px 18px;border-radius:6px;text-decoration:none;">
+        Confirm my email
+      </a>
+    </p>
+    <p>Or paste this link into your browser:</p>
+    <p><a href="{{ link }}">{{ link }}</a></p>
+    <p>If you did not create this account you can safely ignore this email.</p>
+  </body>
+</html>
