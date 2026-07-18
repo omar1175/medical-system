@@ -1,0 +1,11 @@
+{% autoescape off %}
+Hi {{ user.get_full_name|default:user.username }},
+
+Thanks for registering with the Medical Appointment System.
+
+Please confirm your email address by visiting the link below:
+
+{{ link }}
+
+If you did not create this account you can safely ignore this email.
+{% endautoescape %}
