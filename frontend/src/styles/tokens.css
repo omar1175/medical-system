@@ -1,0 +1,16 @@
+/* ==========================================================
+   MediSys — Design Tokens (Clinic Template Inspired)
+   Curated gradient palette. Mirrors src/styles/gradients.js.
+   ========================================================== */
+
+:root {
+  /* Brand gradients */
+  --brand-gradient: linear-gradient(135deg, #175cdd 0%, #4a90e2 100%);
+  --brand-gradient-dark: linear-gradient(135deg, #0c1445 0%, #1a237e 50%, #175cdd 100%);
+
+  /* Harmonious accent gradients (blue/teal/amber family) */
+  --accent-gradient-teal: linear-gradient(135deg, #0ea5e9 0%, #22d3ee 100%);
+  --accent-gradient-green: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  --accent-gradient-indigo: linear-gradient(135deg, #1e3a8a 0%, #175cdd 100%);
+  --accent-gradient-amber: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+}
