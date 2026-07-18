@@ -1,0 +1,7 @@
+Hi {{ appointment.patient.get_full_name|default:appointment.patient.username }},
+
+Your appointment with Dr. {{ appointment.doctor.user.get_full_name|default:appointment.doctor.user.username }}
+scheduled for {{ appointment.scheduled_at }} is now: {{ appointment.status }}.
+
+Thank you,
+Medical Appointment System
